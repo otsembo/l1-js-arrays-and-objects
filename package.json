@@ -1,0 +1,12 @@
+{
+  "name": "l1-js-arrays-and-objects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "author": "Ian Okumu",
+  "license": "ISC"
+}
