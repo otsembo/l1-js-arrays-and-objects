@@ -7,55 +7,69 @@ function print(value){
 // TODO: Complete the function. Create an array that contains numbers
 function scores (){
     // create array with 10 elements
-
+        const grades = [99, 80, 75, 88, 99, 100, 45, 0, 60, 66]
     // return the array
+        return grades
 
 }
 // display value
-// print(`Scores Array: ${scores()}`)
+print(`Scores Array: ${scores()}`)
 
 
 
 // TODO: Access an element from the array
 function accessScore(){
     // using array above access the 3rd element
-
+    const grades = scores();
+    const third = grades[2]
     // return the elememt
+    return third
 }
 // display value
-// print(`Third Score: ${accessScore()}`)
+print(`Third Score: ${accessScore()}`)
 
 
 // TODO: Create an array that has multiple nested arrays
 function nestedScores(){
     // create an array with 3 elements. (The first two elements should be arrays of 2 elements each)
-
+        const shirtNumbers = [10, 7]
+        const ages = [34, 37]
+        const totalGoals = 1600
+        const nestedArray = [shirtNumbers, ages, totalGoals]
     // return the nested arrays
+        return nestedArray
 }
 // display value
-// print(`Nested Score Array: ${nestedScores()}`)
+const appScores = nestedScores()
+print(`Nested Score Array: ${appScores[1][0]}`)
+console.log("Nested:", nestedScores())
 
 
 // TODO: Some array methods (length)
 function getNumberOfScores(){
     // using either of the two arrays created above get the length of the array
-
+    const grades = scores()
     // return the number of elements
+    return grades.length
 
 }
 // display value
-// print(`Number of elements: ${getNumberOfScores()}`)
+print(`Number of elements: ${getNumberOfScores()}`)
+print(`Nested Length: ${nestedScores().length}`)
 
 
 // TODO: Some array methods
 function addElement(){
     // using either of the two arrays created above, add two new elements of your choice
-
+    const grades = nestedScores()
+    grades.push(78, 99, 100)
+    grades.unshift(100, [5,6], "Hello", true)
     // return the new array with the elements that have been added
+    return grades
 
 }
 // display value
-// print(`Added elements: ${addElement()}`)
+print(`Added elements: ${addElement()}`)
 
 
 
