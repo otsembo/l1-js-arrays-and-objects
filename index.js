@@ -77,58 +77,83 @@ print(`Added elements: ${addElement()}`)
 // TODO: Create an student object with the follwoing properties [name, age, email, studentNumber, isKenyan]
 function student(){
     // create student object
-
+    const data = {
+        name: 'Keffrey',
+        age: 25,
+        email: 'keffrey@gmail.com',
+        studentNumber: 4011,
+        isKenyan: true,
+        height: 200,
+        weight: 70.5,
+        "number-of-x": 30,
+        number_of_y: 300
+    }
     // return student object
+    return data
 }
 // display value
-// print(`Student: ${student()}`)
+print(student())
 
 // TODO: Access student's age
 function studentAge(){
     // access student age using key
-
-
+    const studentData = student()
+    const studentAge = studentData['age']
     // return student age
+    return studentAge
 
 }
 // display value
-// print(`Student Age: ${studentAge()}`)
+print(`Student Age: ${studentAge()}`)
 
 
 // TODO: Access student's age
 function studentEmail(){
     // access student email using dot operator
-
-
-    // return student email
+    const studentData = student()
+    const studentEmail = studentData.email
+    // return student age
+    return studentEmail
 
 }
 // display value
-// print(`Student Email: ${studentEmail()}`)
+print(`Student Email: ${studentEmail()}`)
 
 
 // TODO(nested objects): create user object that contains course object => [User(id, name, course), Course(name, number)]
 function user(){
     // create user object
-
+    const user = {
+        id: 1,
+        name: 'Keffrey',
+        course: {
+            name: 'Web Development with JavaScript',
+            number: 2
+        }
+    }
 
     // return user object
-
+    return user
 }
 // display value
-// print(`User: ${user()}`)
-
+print(user())
+const userdata = user()
+const course_number = userdata.course.number
+const course_name = userdata["course"]["name"]
+const c_num = userdata["course"].number
+const c_name = userdata.course["name"]
 
 // TODO: Some object methods (entries)
 function getUserEntries(){
     // get user entries
-
-
+    const entries = Object.entries(userdata)
     // return entries
-
+    return entries
 }
 // display value
-// print(`User Entries: ${getUserEntries()}`)
+print(getUserEntries())
+print(Object.values(userdata))
+print(Object.keys(userdata))
 
 
 // TODO: Some object methods (keys)
