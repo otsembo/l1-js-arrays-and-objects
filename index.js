@@ -1,6 +1,6 @@
 // Utility
-function print(value){
-    console.info(value)
+function print(tag, value){
+    console.info(tag, value)
 }
 
 // 1. ARRAYS
@@ -12,7 +12,7 @@ function scores (){
 
 }
 // display value
-// print(`Scores Array: ${scores()}`)
+// print(`Scores Array:`, scores())
 
 
 
@@ -23,7 +23,7 @@ function accessScore(){
     // return the elememt
 }
 // display value
-// print(`Third Score: ${accessScore()}`)
+// print(`Third Score:`, accessScore())
 
 
 // TODO: Create an array that has multiple nested arrays
@@ -33,7 +33,7 @@ function nestedScores(){
     // return the nested arrays
 }
 // display value
-// print(`Nested Score Array: ${nestedScores()}`)
+// print(`Nested Score Array:`, nestedScores())
 
 
 // TODO: Some array methods (length)
@@ -44,7 +44,7 @@ function getNumberOfScores(){
 
 }
 // display value
-// print(`Number of elements: ${getNumberOfScores()}`)
+// print(`Number of elements:`, getNumberOfScores())
 
 
 // TODO: Some array methods
@@ -55,7 +55,7 @@ function addElement(){
 
 }
 // display value
-// print(`Added elements: ${addElement()}`)
+// print(`Added elements:`, addElement())
 
 
 
@@ -67,7 +67,7 @@ function student(){
     // return student object
 }
 // display value
-// print(`Student: ${student()}`)
+// print(`Student:`, student())
 
 // TODO: Access student's age
 function studentAge(){
@@ -78,7 +78,7 @@ function studentAge(){
 
 }
 // display value
-// print(`Student Age: ${studentAge()}`)
+// print(`Student Age:`, studentAge())
 
 
 // TODO: Access student's age
@@ -90,7 +90,7 @@ function studentEmail(){
 
 }
 // display value
-// print(`Student Email: ${studentEmail()}`)
+// print(`Student Email:`, studentEmail())
 
 
 // TODO(nested objects): create user object that contains course object => [User(id, name, course), Course(name, number)]
@@ -102,7 +102,7 @@ function user(){
 
 }
 // display value
-// print(`User: ${user()}`)
+// print(`User:`, user())
 
 
 // TODO: Some object methods (entries)
@@ -114,7 +114,7 @@ function getUserEntries(){
 
 }
 // display value
-// print(`User Entries: ${getUserEntries()}`)
+// print(`User Entries:`, getUserEntries())
 
 
 // TODO: Some object methods (keys)
@@ -126,5 +126,5 @@ function getUserKeys(){
 
 }
 // display value
-// print(`User Keys: ${getUserKeys()}`)
+// print(`User Keys:`, getUserKeys())
 
