@@ -96,25 +96,40 @@ print('Squares', y)
 // TODO: Create an student object with the follwoing properties [name, age, email, studentNumber, isKenyan]
 function student(){
     // create student object
-
+    const student = {
+        name: 'Ian',
+        age: 20,
+        email: 'ian.okumu@moringaschool',
+        studentNumber: 'MS-100000',
+        isKenyan: false
+    }
+    // const computer = {
+    //     "Laptop-model !": 'HP',
+    //     "*-=": 67
+    // }
     // return student object
+    return student
 }
 // display value
-// print(`Student:`, student())
+print(`Student:`, student())
 
 // TODO: Access student's age
 function studentAge(){
     // access student age using key
-
+    const learner = student()
+    // work (plain or quoted)
+    age = learner["age"]
+    // limited to plain keys
+    age = learner.age
 
     // return student age
-
+    return learner.age
 }
 // display value
-// print(`Student Age:`, studentAge())
+print(`Student Age:`, studentAge())
 
 
-// TODO: Access student's age
+// TODO: Access student's email
 function studentEmail(){
     // access student email using dot operator
 
@@ -129,13 +144,28 @@ function studentEmail(){
 // TODO(nested objects): create user object that contains course object => [User(id, name, course), Course(name, number)]
 function user(){
     // create user object
-
-
+    const userDetails = {
+        id: 45,
+        name: 'Albert',
+        course: {
+            name: 'Arrays in JS',
+            number: 56
+        }
+    }
     // return user object
-
+    return userDetails
 }
 // display value
-// print(`User:`, user())
+print(`User:`, user())
+const details = user()
+// dot operator
+let c_num = details.course.number
+// []
+c_num = details["course"]["number"]
+// dot operator, []
+c_num = details.course["number"]
+c_num = details["course"].number
+
 
 
 // TODO: Some object methods (entries)
@@ -153,11 +183,10 @@ function getUserEntries(){
 // TODO: Some object methods (keys)
 function getUserKeys(){
     // get user keys
-
-
+    const keys = Object.keys(details)
     // return keys
-
+    return keys
 }
 // display value
-// print(`User Keys:`, getUserKeys())
+print(`User Keys:`, getUserKeys())
 
